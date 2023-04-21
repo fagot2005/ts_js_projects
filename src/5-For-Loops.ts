@@ -16,9 +16,11 @@ let numArray: (string | number)[] = [
   90,
 ];
 
-// for (let i: number = 0; i < numArray.length; i++) {
-//   console.log(numArray[i]);
-// }
+for (let i: number = 0; i < numArray.length; i++) {
+  console.log(numArray[i]);
+}
+
+console.log("==============================");
 
 for (let item of numArray.entries()) {
   console.log(item[0], item[1]);
@@ -30,3 +32,4 @@ for (let [i, item] of numArray.entries()) {
   //console.log(item[0], item[1]);
   console.log(`${i+1} - ${item}`);
 }
+
