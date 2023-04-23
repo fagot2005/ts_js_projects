@@ -1,7 +1,7 @@
 "use strict";
 let balanse = 1000;
 let summOperation = 120;
-let isAddSumma = true;
+let isAddSumma = false;
 console.log(`Current balanse = ${balanse}`);
 //function declaratoins
 balanse = ChangeBalanse(summOperation, isAddSumma);
@@ -32,7 +32,7 @@ newBalanse = () => {
         return balanse + summOperation;
     }
     else
-        return balanse + summOperation;
+        return balanse - summOperation;
 };
 console.log(`Current balanse = ${balanse}`);
 console.log(`Current new balanse = ${newBalanse()}`);

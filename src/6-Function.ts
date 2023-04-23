@@ -1,6 +1,6 @@
 let balanse: number = 1000;
 let summOperation: number = 120;
-let isAddSumma: boolean = true;
+let isAddSumma: boolean = false;
 
 console.log(`Current balanse = ${balanse}`);
 
@@ -36,7 +36,7 @@ console.log("===========================================");
 newBalanse = (): number => {
   if (isAddSumma) {
     return balanse + summOperation;
-  } else return balanse + summOperation;
+  } else return balanse - summOperation;
 };
 
 console.log(`Current balanse = ${balanse}`);
